@@ -26,78 +26,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         child: Wrap(
-          children: [
-            Container(
-              width: 200,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(9),
-              ),
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(9),
-                    child: Row(
-                      children: [
-                        Container(
-                          alignment: Alignment.center,
-                          height: 30,
-                          width: 30,
-                          decoration: BoxDecoration(
-                            color: const Color(0xFFFF9C00).withOpacity(.12),
-                            shape: BoxShape.circle,
-                          ),
-                          child: SvgPicture.asset(
-                            'assets/icons/running.svg',
-                            width: 13,
-                            height: 13,
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 6,
-                        ),
-                        const Text(
-                          'Confirmed Cases',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(9.0),
-                        child: RichText(
-                          text: TextSpan(
-                            children: [
-                              TextSpan(
-                                text: '1,063 \n',
-                                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                              ),
-                              const TextSpan(
-                                text: 'People',
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 12,
-                                  height: 2,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: LinerReportChart(),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ],
+          children: [],
         ),
       ),
     );

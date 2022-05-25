@@ -1,4 +1,4 @@
-# covid_19
+# Covid 19 Web
 
 ## Practice app on flutterway channel
 
